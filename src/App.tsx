@@ -30,7 +30,7 @@ const App: React.FC = () => {
     <div className="container fruitsList">
       <h1>Fruits Store</h1>
 
-      {fruits?.map((fruit) => (
+      {fruits && fruits.map((fruit) => (
         <div key={fruit.id}>
           <figure>
             <img src={fruit.image}alt={fruit.name}/>
